@@ -26,6 +26,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;   /*  deixa fixo */
+    top: 0;            /*  cola no topo */
+    left: 0;
+    width: 100%;       /*  ocupa toda largura */
+    z-index: 1000;     /*  fica acima de tudo */
 }
 
 /* LOGO */
@@ -128,6 +133,8 @@ nav a:hover::after {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 80px; /*  empurra por causa do header fixo */
+    height: calc(100vh - 80px); /*  ajusta altura para compensar o header */
 }
 
 /* VIDEO */
@@ -511,14 +518,14 @@ nav a:hover::after {
 /* GRID */
 .cards-equipe {
     display: flex;
-    flex-direction: column; /* 🔥 um embaixo do outro */
+    flex-direction: column; /*  um embaixo do outro */
     align-items: center;
     gap: 20px;
 }
 
 /*  CARD MODELO */
 .card-membro {
-    display: flex; /* 🔥 deixa horizontal */
+    display: flex; /*  deixa horizontal */
     align-items: center;
     gap: 40px; /* espaço entre foto e texto */
     width: 100%;
@@ -541,8 +548,8 @@ nav a:hover::after {
     height: 340px;
     border-radius: 8px;
     object-fit: cover;
-    min-width: 160px; /* 🔥 ISSO ALINHA TUDO */
-    flex-shrink: 0; /* 🔥 IMPORTANTE */
+    min-width: 160px; /*  ISSO ALINHA TUDO */
+    flex-shrink: 0; /*  IMPORTANTE */
 }
 
 /* CONTEÚDO EMBAIXO */
@@ -713,4 +720,8 @@ footer {
 }
 
 /* ANIMAÇÃO DAS SEÇÕES */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 
