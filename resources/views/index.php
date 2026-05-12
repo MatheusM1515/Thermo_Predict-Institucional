@@ -17,7 +17,7 @@
         <div class="logo">
             <svg viewBox="0 0 300 70">
                 <path d="M35 10 L55 20 L55 40 Q35 60 15 40 L15 20 Z" fill="#FFFFFF" />
-                <polyline points="20,35 28,28 35,32 45,22" fill="none" stroke="#22C55E" stroke-width="2" />
+                <polyline points="20,35 28,28 35,32 45,22" fill="none" stroke="#06B6D4" stroke-width="2" />
                 <text x="70" y="40" font-family="Montserrat" font-size="22" fill="#FFFFFF" font-weight="600">
                     Thermo_Predict
                 </text>
